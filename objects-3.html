@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        var obj1 = new Object();//object constructor syntax 
+        var obj2 = {}; //Object literal syntax
+        
+        var user = new Object();
+        console.log(user);
+
+        user.name = '"Mahaveer S"';
+        user.funct = function(){
+            console.log('Hi');
+        }
+
+        console.log(user.hasOwnProperty('name'));
+        console.log(user.hasOwnProperty('funct'));
+        console.log(user.hasOwnProperty('toString'));
+        console.log(user.hasOwnProperty('valueOf'));
+        console.log(user.hasOwnProperty('designation'));
+
+        console.log(user.toString('toString'));
+        console.log(user.valueOf('valueOf'));
+       
+    </script>
+</head>
+<body>
+    <h3>Objects Part - II</h3>
+</body>
+</html>

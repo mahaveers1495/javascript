@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document9</title>
+    <script type="text/javascript">
+        //do while
+        // do{
+        //     console.log("Playing game..");
+
+        //     var continuePlaying = confirm("Continue Playing ...");            
+        // }while(continuePlaying);
+        // console.log('Game over!');
+
+        //while
+        // var a=1;
+        // while(a<10){
+        //     console.log("value",a++);
+        // }
+        // console.log("While Loop endeed");
+
+        //For loop
+        // for(var a=1;a<=10;a++){
+        //     console.log("Print", a);
+        // }
+        // console.log("Ended for loop");
+
+        //Break and Continue
+        var mnth = prompt("Enter Month " ,2);
+        for(var days=1;days<=31;days++){
+            if((mnth==4 || mnth == 6|| mnth == 9 || mnth == 11) && days ==31)continue
+            console.log('Day: ' +days);
+            if(mnth == 2 && days == 28) break;                  
+        }
+    </script>
+</head>
+<body>
+    <h3>Javascript in Looping</h3>   
+    <h2>Do while,while,For loop</h2>
+</body>
+</html>

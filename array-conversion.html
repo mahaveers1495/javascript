@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        var user = {
+            name : 'Mahaveer',
+            funct: function(){
+                return 'Hi';
+            },
+            toString: function(){
+                return this.name +' says '+ this.funct();
+
+            },
+            valueOf:function(){
+                return true;
+            }
+        };
+
+        console.log(user.toString());
+        console.log(user.valueOf());
+
+        // var fruits = ['Apple', 'Orange','Banana' ];
+        // console.log(fruits.toString());
+        // console.log(fruits.toLocaleString());
+        // alert(fruits.toString());
+        // console.log(fruits.join());
+
+        var numbers = [101,102,103,104];
+        console.log(numbers.toString());
+        console.log(numbers.toLocaleString());
+        alert(numbers.toString());
+        console.log(numbers.join( ' + ' ));
+
+    </script>
+
+</head>
+<body>
+    <h3>Creating Array Conversion Methods </h3>
+</body>
+</html>

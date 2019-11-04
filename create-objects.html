@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    //both objects are different purpose
+    //u need to create the obect on their own name its useful to handle
+    //if u need to create same properties on multiple time u have to do for 
+        var literalObj1 ={
+            name: 'Mahaveer',
+            designation:'Developer',
+            salary:25000
+        };
+        console.log(literalObj1 instanceof Object);
+
+        var literalObj2 ={
+            name: 'Facebook',
+            type:'Communication',
+            popularity:'Very High'
+        };
+        console.log(literalObj2 instanceof Object);
+
+        function ObjectConstructor(name,designation,salary){
+            this.name = name;
+            this.designation = designation;
+            this.salary = salary;
+        }
+        //creating objects with separate name
+        var object1 = new ObjectConstructor('Mahaveer','Developer',30000);
+        console.log(object1);
+
+        var object2 = new ObjectConstructor('Siva','Designer',34000);
+        console.log(object2);
+
+        console.log(object1 instanceof ObjectConstructor);
+        console.log(object2 instanceof Object); //object is extenstion of existing object name. so its also gives to the true
+    </script>
+</head>
+<body>
+    <h3>Creating Objects </h3>
+</body>
+</html>

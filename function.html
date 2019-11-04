@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        // function functionName(){
+        //     console.log("Calling this function...");
+        // }
+        // functionName();
+
+        // //with parameter and arguments
+        // function func(message,name){
+        //     return "Hello " +name + message;
+        // }
+        // var reqMessage = func(" I'm a develoer","I'm Mahaveer.");
+        // console.log(reqMessage);
+
+        //multiple return statements        
+        // function func2(message,name){
+        //     if(name){
+        //         return "Hello, " +name+" "+ message;
+        //     }
+        //     else{
+        //         return "Hello " +message;
+        //     }            
+        // }
+        // var addMessage = func2("I'm a developer");
+        //     console.log(addMessage);
+
+//
+        //     function func2(message,name){
+        //     if(name){
+        //         return "Hello, " +name+" "+ message;
+        //     }
+        //     else{
+        //         console.log("I wont be visible if u give name");
+        //         return "Hello " +message;
+        //     }            
+        // }
+        // var addMessage = func2("I'm a developer");
+        //     console.log(addMessage);
+
+        //js can method overriding last method will be called
+        //compared to other programming language js is rewrite the 
+        //same method name but calling the last method only its call
+
+            function fun3(name){
+                console.log("Im the 1st method");
+            }
+            function fun3(){
+                console.log("Overriden method");//this method is invoking
+            }
+            fun3("veer");//if u call paramterized method but it will calling only last written method 
+
+            //if u try to return there is no return statement its shows undefined
+
+            var returnFunc= fun3("Veer");
+            console.log(returnFunc);
+
+    </script>
+</head>
+<body>
+    <h3>Javascript - Funtions Basics Only</h3>
+</body>
+</html>

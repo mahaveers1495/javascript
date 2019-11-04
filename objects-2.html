@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        var obj1 = new Object();//object constructor syntax 
+        var obj2 = {}; //Object literal syntax
+
+        var user1=new Object();
+        user1.name = "Mahaveer";
+        user1.designation = "Developer";
+
+        user1.funct = function(){
+            console.log("Hello , " +user1.name );                        
+        }
+        user1.funct();
+
+        var user2 = {
+            name:'Saro',
+            designation:"Network Enginneer",
+
+            funct:function(){
+                console.log("Hello , " +this.name);
+            }
+        }
+        user2.funct();
+
+
+        var user3 =user2;
+        user3.funct();
+        user2 =null;
+        user3.funct();
+
+        console.log(user3);
+
+        user1['first name'] = 'Mahaveer S';
+        console.log(user1);
+
+        var propaName = 'first name';
+        console.log(user1[propaName]);
+
+        //for-in loop
+        for(test in user3){
+            console.log(user3[test]);
+        }
+        
+    </script>
+</head>
+<body>
+    <h3>Objects Part - I</h3>
+</body>
+</html>

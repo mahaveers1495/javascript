@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+    var students = ['Mahaveer','Siva','Saro'];
+    var addToStudents = students;
+    console.log('Students List ', students );
+    console.log('added to other one ',addToStudents);
+
+    addToStudents.push('Kumar');
+    console.log('One more', students);
+    console.log('added to other one more  ',addToStudents);
+
+//concat() method used for merge the 2 arrays
+    var newStudents = students.concat();
+    newStudents.push('Ramesh');
+
+    console.log('Existing students ', students);
+    console.log('concat() method used for add new without affect old one ',newStudents);
+    
+    var addMore = newStudents.concat('Suresh','Guna');
+    console.log('addMore ', addMore);
+
+        //concat merge for both kamma sperated string and array string also
+        //duplication of array with some changes and without changes both the way to duplicated
+    var additionalStudents = addMore.concat('Ajith','Senthil',['Ganesh','Naveen']);
+    console.log('additionalStudents ' , additionalStudents);
+
+        var sliceTheStudents = additionalStudents.slice(0,7);
+        console.log('Slice() the students ', sliceTheStudents);
+
+        var allOtherStudents = additionalStudents.slice(7);
+        console.log('All other students ', allOtherStudents);
+
+        //spilce() user for insert and delete
+
+        var removeStudents = additionalStudents.splice(6,additionalStudents.length - 6);
+        console.log(additionalStudents);
+        console.log('Removed Students \n ',removeStudents);
+
+        var noStudents = additionalStudents.slice(0,0,'Megha');
+        console.log('No students', noStudents);
+        console.log(additionalStudents);
+
+        additionalStudents.splice(0,2,'Kamal');
+        console.log('Removing 1st two students and Added',additionalStudents);
+
+    </script>
+</head>
+<body>
+    <h3>Array Manipulation Methods</h3>   
+</body>
+</html>

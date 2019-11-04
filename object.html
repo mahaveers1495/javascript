@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" >
+
+        var person = new Object();//person is an object value and object is a reference type of person
+        console.log(person instanceof Object);
+
+        person.name = "Mahaveer";
+        person.position="Software Devloper";
+
+        console.log(person.name + " " +person.position);
+
+        //we call function instead of method here
+        person.prop= function func(){
+            console.log("I,m the function.But here my name is method.");
+        }      
+        person.prop();
+
+        var num1 = 10;
+        var num2 =num1;
+        var obj1 =new Object();
+        var obj2=obj1;
+
+        obj2.porperty = 'By Reference';
+        console.log('Obj 1', obj1);
+        console.log('obj 2 ', obj2);
+
+    </script>
+</head>
+<body>
+    <h3>Javascript - Objects</h3>
+   
+</body>
+</html>

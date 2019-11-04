@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+        // var alphabets =['d','c','b','a'];
+        // var numbers = [4,3,2,1];
+
+        // console.log(alphabets);
+        // console.log(numbers);
+
+        // alphabets.reverse();
+        // console.log(alphabets);
+        // numbers.reverse();
+        // console.log(numbers);
+
+        var unorederNumbers = [5000,80000,200,30,90,10,60,100];
+        // console.log('Before Sorting\n',unorederNumbers);
+
+        // unorederNumbers.sort();
+        // console.log('After Sorting\n',unorederNumbers);
+
+        function decendingOrder(value1,value2){
+            // if(value1 > value2){
+            //     return -1;
+            // }
+            // else if(value1 < value2){
+            //     return 1;
+            // }else{
+            //     return 0;
+            // }
+            return value2 - value1;
+
+        }
+
+        unorederNumbers.sort(decendingOrder);
+        console.log('Decending orders \n',unorederNumbers);
+
+        function acendingOrder(value1 , value2){
+            return value1 - value2;
+        }
+
+        unorederNumbers.sort(acendingOrder);
+        console.log('Ascending orders \n',unorederNumbers);      
+
+    </script>
+</head>
+<body>
+    <h3>Array Reordering Methods</h3>   
+</body>
+</html>

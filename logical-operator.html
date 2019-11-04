@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //Logical
+        //Not
+        console.log(" !true = ", !true);
+        console.log(" !12 = ", !11);
+
+        //OR 
+        console.log(" 12 = 'ok' ", 12 ||'ok' );
+        console.log("null || 'ok' = ",null || "ok");
+
+        var userInput = userInput || 0 ;
+        console.log(userInput);
+
+        //AND  (true=true = true) other false
+        //it will check the both the values
+        console.log("2 && 4", 2 && 4);//both are truthy values
+
+        console.log( "null && 2 ",null && 2 );//either one is false its gives false
+
+        console.log("undefined && 'undefined' " , undefined && undefined);//both are falsy value so false
+        
+
+
+
+    </script>
+</head>
+<body>
+    <h3>Javascript Logical-Oper</h3>
+
+    <p><b>
+        Falsy Values: <br>
+        false,0,"empty string",null,undefined,NaN... <br>
+
+        <br>
+        others are truthy values....
+    </b>
+    </p>
+   
+</body>
+</html>
